@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'users/new'
+  # get 'users/new'
+
+  resources :users # We can get the REST-style URL to work by adding a single line to our routes file 
 
   root  'static_pages#home'
   match '/signup',  to: 'users#new',            via: 'get'

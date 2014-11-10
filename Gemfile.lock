@@ -50,6 +50,11 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.2)
+    factory_girl (4.2.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.2.0)
+      factory_girl (~> 4.2.0)
+      railties (>= 3.0.0)
     ffi (1.9.6)
     hike (1.2.3)
     i18n (0.6.11)
@@ -66,7 +71,7 @@ GEM
     mini_portile (0.6.1)
     minitest (5.4.2)
     multi_json (1.10.1)
-    nokogiri (1.6.4)
+    nokogiri (1.6.4.1)
       mini_portile (~> 0.6.0)
     pg (0.15.1)
     rack (1.5.2)
@@ -135,7 +140,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    turbolinks (2.5.1)
+    turbolinks (2.5.2)
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -154,6 +159,7 @@ DEPENDENCIES
   bootstrap-sass (= 2.3.2.0)
   capybara (= 2.1.0)
   coffee-rails (~> 4.0.0)
+  factory_girl_rails (= 4.2.0)
   jbuilder (~> 2.0)
   jquery-rails
   minitest
