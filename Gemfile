@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.6'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
+gem 'bcrypt-ruby', '3.1.2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -25,6 +26,8 @@ gem 'jbuilder', '~> 2.0'
 group :doc do
   gem 'sdoc', '0.4.0', require: false
 end
+
+gem 'minitest'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 # Use sqlite3 as the database for Active Record
