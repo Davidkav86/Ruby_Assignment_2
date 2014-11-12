@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
   # get 'users/new'
 
-  resources :users # We can get the REST-style URL to work by adding a single line to our routes file 
+  resources :users # We can get the REST-style URL to work with the user controller by adding a single line to our routes file 
+  resources :sessions, only: [:new, :create, :destroy] # apples RESTful resources to sessions controller
 
   root  'static_pages#home'
   match '/signup',  to: 'users#new',            via: 'get'
+  match '/signin',  to: 'sessions#new',         via: 'get'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
