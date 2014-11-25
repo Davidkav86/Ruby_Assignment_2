@@ -1,0 +1,12 @@
+<% provide(:title, 'Admnistrator #{@user.name}') %>
+<h1>Admin home page</h1>
+<p>
+	Home page for an administrator
+	<ul class="nav pull-right">
+		<li><%= link_to "Write an article", add_article_path %></li>
+		<li><%= link_to "Create an administrator account", new_admin_path %></li>
+		<li><%= link_to "View all Users", '#' %></li>
+		<li><%= link_to "List of articles", '#' %></li>
+		<li><%= link_to "Delete/Edit comments from all users", '#' %></li>
+	</ul>
+</p>
