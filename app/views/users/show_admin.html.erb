@@ -9,4 +9,13 @@
 		<li><%= link_to "List of articles", '#' %></li>
 		<li><%= link_to "Delete/Edit comments from all users", '#' %></li>
 	</ul>
+	<div class="span8">
+		<ul class="users">
+			<% @users.each do |user| %>
+			<li>
+				<%= link_to user.name, user %>
+			</li>
+			<% end %>
+		</ul>
+	</div>
 </p>
