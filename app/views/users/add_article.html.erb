@@ -1,8 +1,28 @@
-<% provide(:title, 'Admnistrator #{@user.name}') %>
-<h1>Add an Article</h1>
+<% provide(:title, "Admnistrator") %>
+
+<h1>Article Management Page</h1>
+
+<div class="span8 pull-right">
+    <% if @user.articles.any? %>
+      <h3>Articles (<%= @user.articles.count %>)</h3>
+      <ol class="articles">
+        <%= render @articles %>
+      </ol>
+      <%= will_paginate @articles %>
+    <% end %>
+  </div>
 <p>
-	Home page for an administrator
-	<ul class="nav pull-right">
-		<li><%= link_to "Profile Page", current_user %></li>
-	</ul>
+	Manage Articles
+	<div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/article_form' %>
+      </section>
+    </aside>
+  </div>
+</p>
+<p>
+  <ul class="nav pull-left">
+	<li><%= link_to "Admin Home Page", current_user %></li>
+  </ul>
 </p>
