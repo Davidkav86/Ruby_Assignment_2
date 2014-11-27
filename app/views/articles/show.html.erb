@@ -1,0 +1,10 @@
+<% provide(:title, @article.title) %>
+<h2>Article page - articles/show.html</h2>
+<p>
+   <%= render 'layouts/article' %>
+</p>
+<p>
+  <ul class="nav pull-left">
+	<li><%= link_to "Admin Home Page", current_user %></li>
+  </ul>
+</p>

@@ -1,0 +1,28 @@
+<body>
+  <div class="container">
+    <img src="https://s3.amazonaws.com/jetstrap-site/images/website/index/what_icon.png"
+    class="pull-right">
+    <div class="container pull-left">
+      <h1>
+       <%= @article.title %>
+      </h1>
+    </div>
+    <span class="timestamp pull-right">
+    Posted at: <%= @article.created_at %>.
+    </span>
+    <div class="container pull-right">
+      Posted by: <%= @user_name%>
+    </div>
+    <div class="form-group">
+    </div>
+    <textarea class="form-control" style="margin-top: 0px; margin-bottom: 0px; height: 400px;">
+      <%= @article.content %>
+    </textarea>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+  >
+  </script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
+  >
+  </script>
+</body>

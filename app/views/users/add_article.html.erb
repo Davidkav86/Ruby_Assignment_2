@@ -1,28 +1,35 @@
 <% provide(:title, "Admnistrator") %>
 
 <h1>Article Management Page</h1>
-
-<div class="span8 pull-right">
-    <% if @user.articles.any? %>
-      <h3>Articles (<%= @user.articles.count %>)</h3>
-      <ol class="articles">
-        <%= render @articles %>
-      </ol>
-      <%= will_paginate @articles %>
-    <% end %>
-  </div>
+ <ul class="nav container pull-right">
+  <li><%= link_to "Admin Home Page", current_user %></li>
+  </ul>
+</p>
 <p>
-	Manage Articles
-	<div class="row">
+  Manage Articles
+  <div class="row">
     <aside class="span4">
       <section>
         <%= render 'shared/article_form' %>
+      </section>
+      <section>
+        <%= render 'shared/image_form'%>
       </section>
     </aside>
   </div>
 </p>
 <p>
-  <ul class="nav pull-left">
-	<li><%= link_to "Admin Home Page", current_user %></li>
-  </ul>
-</p>
+
+<div class="container">
+    <% if @user.articles.any? %>
+    <div class="container">
+      <h2>Article List - Total:<%= @user.articles.count %></h2>
+    </div>
+    <div class="container">
+      <ol class="articles">
+        <%= render @articles %>
+      </ol>
+      </div>
+      <%= will_paginate @articles %>
+    <% end %>
+  </div>

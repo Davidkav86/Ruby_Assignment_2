@@ -3,11 +3,13 @@ class User < ActiveRecord::Base
   validates :name, presence: true, length: { maximum: 50 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence:   true,
-                    format:     { with: VALID_EMAIL_REGEX },
-                    uniqueness: { case_sensitive: false }
+  format:     { with: VALID_EMAIL_REGEX },
+  uniqueness: { case_sensitive: false }
   has_secure_password
   validates :password, length: { minimum: 6 }
   before_create :create_remember_token # arranges for Rails to look for a method called create_remember_token and run it before saving the user
+
+  has_many :articles, dependent: :destroy
 
 
   def User.new_remember_token
@@ -20,7 +22,7 @@ class User < ActiveRecord::Base
 
   private
 
-    def create_remember_token
-      self.remember_token = User.digest(User.new_remember_token)
-    end
+  def create_remember_token
+    self.remember_token = User.digest(User.new_remember_token)
+  end
 end
