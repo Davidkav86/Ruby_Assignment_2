@@ -1,14 +1,102 @@
 
-<div class="center hero-unit">
-  <h1>Welcome to the Sample App</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+    <div class="container">
+      <div class=" pull-left">
+        <h1>
+          Headlines
+        </h1>
+      </div>
+    </div>
+    <div class="container">
+    <div class=" pull-left">
+      <div class="center">
+        <img class="center", src="https://s3.amazonaws.com/jetstrap-site/images/website/index/what_icon.png">
+      </div>
 
-  <h2>
-    This is the home page for the
-    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
-
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+      <h4 style="float:left;display: inline; width: 265px; word-break: break-all; word-wrap: break-word;">
+        <%= @articles[0].title %>
+      </h4>
+      <textarea rows="12" cols="40" class="form-control">
+      	<%= @articles[0].content.at(0..380) + "..."%>
+      </textarea>
+       <p class="center">
+         Posted <%= time_ago_in_words(@articles[0].created_at) %> ago.
+      </p>
+      <li class="center">
+		<%= link_to "Read Full Article Here",  @articles[0]%>
+	  </li>
+    </div>
+    <div class="block pull-left" align="center">
+      <div class="center">
+        <img class="center", src="https://s3.amazonaws.com/jetstrap-site/images/website/index/what_icon.png">
+      </div>
+      <h4 style="float:left;display: inline; width: 265px; word-break: break-all; word-wrap: break-word;">
+        <%= @articles[1].title %>
+      </h4>
+      <textarea rows="12" cols="40" class="form-control">
+      	<%= @articles[1].content.at(0..380) + "..."%>
+      </textarea>
+      <p class="center">
+         Posted <%= time_ago_in_words(@articles[1].created_at) %> ago.
+      </p>
+      <li class="center">
+		<%= link_to "Read Full Article Here",  @articles[1]%>
+	  </li>
+    </div>
+    <div class="pull-left">
+      <div class="center">
+        <img class="center", src="https://s3.amazonaws.com/jetstrap-site/images/website/index/what_icon.png">
+      </div>
+      <h4 style="float:left;display: inline; width: 265px; word-break: break-all; word-wrap: break-word;">
+        <%= @articles[2].title %>
+      </h4>
+      <textarea rows="12" cols="40" class="form-control">
+      	<%= @articles[2].content.at(0..380) + "..."%>
+      </textarea>
+      <p class="center">
+         Posted <%= time_ago_in_words(@articles[2].created_at) %> ago.
+      </p>     
+      <li class="center">
+		<%= link_to "Read Full Article Here",  @articles[2]%>
+	  </li>
+    </div>
+</div>
+    <div class="container">
+      <h3>
+        Latest News
+      </h3>
+    </div>
+    <div class="container">
+    	<ul class="list-group">
+         <span class="content">
+  	     <li><%= link_to @articles[3].title, @articles[3] %></li>
+          </span>
+         <span class="timestamp">
+              Posted <%= time_ago_in_words(@articles[3].created_at) %> ago.
+           </span>
+        </li>
+       </ul>
+       <ul class="list-group">
+         <span class="content">
+  	     <li><%= link_to @articles[4].title, @articles[4] %></li>
+          </span>
+         <span class="timestamp">
+              Posted <%= time_ago_in_words(@articles[4].created_at) %> ago.
+           </span>
+        </li>
+       </ul>
+       <ul class="list-group">
+         <span class="content">
+  	     <li><%= link_to @articles[5].title, @articles[5] %></li>
+          </span>
+         <span class="timestamp">
+              Posted <%= time_ago_in_words(@articles[5].created_at) %> ago.
+           </span>
+        </li>
+       </ul>
+    </div>
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-primary" %>
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>

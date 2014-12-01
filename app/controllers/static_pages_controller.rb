@@ -1,6 +1,8 @@
 class StaticPagesController < ApplicationController
   def home
-  	@article = current_user.articles.build if signed_in?
+  	# @article = current_user.articles.build if signed_in?
+  	@user = current_user
+  	@articles = Article.all
   end
 
   def help

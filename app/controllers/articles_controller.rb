@@ -11,16 +11,7 @@ class ArticlesController < ApplicationController
 
 	def show
 		@article = Article.find(params[:id])
-		@user = User.find(params[:id]) 
-		@user_name = @user.name
-		@image = Image.new(params[:image])
-		respond_to do |format|      
-			if @image.save         
-				format.html { redirect_to @image, notice: 'Image was successfully created.' } 
-			else      
-				format.html { render action: "new" }  
-			end    
-		end
+		@user = User.find_by(id: @article.user_id) 
 	end
 
 	def create
@@ -29,7 +20,7 @@ class ArticlesController < ApplicationController
 			flash[:success] = "Article Published!"
 			redirect_to current_user
 		else
-			flash[:error] = "Artile has not been Published"
+			flash[:error] = "Error Publishing Article"
 			render 'users/show_admin'
 		end
 	end

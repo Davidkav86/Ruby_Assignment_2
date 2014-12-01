@@ -1,0 +1,903 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"user",
+				"user_name"
+			],
+			[
+				"A",
+				"Article"
+			],
+			[
+				"fi",
+				"find"
+			],
+			[
+				"create",
+				"create_admin"
+			],
+			[
+				"add",
+				"add_article"
+			],
+			[
+				"show",
+				"show_admin"
+			],
+			[
+				"is",
+				"is_admin"
+			],
+			[
+				"in",
+				"instance"
+			],
+			[
+				"insta",
+				"instance"
+			],
+			[
+				"trigger",
+				"trigger_alarm"
+			],
+			[
+				"aut",
+				"autoscaling_group"
+			],
+			[
+				"DK",
+				"DK-AutoScale-Boto"
+			],
+			[
+				"launch",
+				"launch_config"
+			],
+			[
+				"auto",
+				"autoscaling_conn"
+			],
+			[
+				"mo",
+				"monitor_instance"
+			],
+			[
+				"C",
+				"CPUUtilization"
+			],
+			[
+				"Inst",
+				"InstanceId"
+			],
+			[
+				"dimen",
+				"dimension"
+			],
+			[
+				"dim",
+				"dimensions"
+			],
+			[
+				"alar",
+				"alarm_set"
+			],
+			[
+				"monitor",
+				"monitor_instance"
+			],
+			[
+				"co",
+				"connect_to_region"
+			],
+			[
+				"top",
+				"topics"
+			],
+			[
+				"connect",
+				"connect_to_region"
+			],
+			[
+				"instance",
+				"instance_id"
+			],
+			[
+				"Web",
+				"Webserver"
+			],
+			[
+				"web",
+				"webserver_installed"
+			],
+			[
+				"my",
+				"mysql_installed"
+			],
+			[
+				"mys",
+				"mysql_installed"
+			],
+			[
+				"In",
+				"Instance"
+			],
+			[
+				"suc",
+				"sucessfully"
+			],
+			[
+				"su",
+				"sucessfully"
+			],
+			[
+				"monitor_webserver",
+				"monitor_webserver_menu"
+			],
+			[
+				"mon",
+				"monitor_test"
+			],
+			[
+				"moni",
+				"monitor"
+			],
+			[
+				"el",
+				"elif"
+			],
+			[
+				"get",
+				"getstatusoutput"
+			],
+			[
+				"ec2",
+				"ec2-user"
+			],
+			[
+				"key",
+				"key_name"
+			],
+			[
+				"check",
+				"check_webserver"
+			],
+			[
+				"TX",
+				"TX_DavidKav"
+			],
+			[
+				"comp",
+				"complexKey"
+			],
+			[
+				"ca",
+				"cacheComplexDataConsistencyTest"
+			],
+			[
+				"remote",
+				"remoteComplexKey"
+			],
+			[
+				"coml",
+				"complexKey"
+			],
+			[
+				"author",
+				"author"
+			],
+			[
+				"update",
+				"updateComplexData"
+			],
+			[
+				"au",
+				"authorKey"
+			],
+			[
+				"set",
+				"setComplexDataLocal"
+			],
+			[
+				"setCompl",
+				"setComplexDataLocal"
+			],
+			[
+				"compl",
+				"complexData"
+			],
+			[
+				"di",
+				"display_cache"
+			],
+			[
+				"g",
+				"get"
+			],
+			[
+				"ec",
+				"each"
+			],
+			[
+				"complex",
+				"complexKey"
+			],
+			[
+				"complexdata",
+				"complexData"
+			],
+			[
+				"getLocal",
+				"getLocalComplexData"
+			],
+			[
+				"auth",
+				"authorSearch"
+			],
+			[
+				"up",
+				"updateComplexData"
+			],
+			[
+				"comple",
+				"complexKey"
+			],
+			[
+				"N",
+				"new"
+			],
+			[
+				"B",
+				"BookInStock"
+			],
+			[
+				"book",
+				"bookString"
+			],
+			[
+				"string",
+				"stringDataList"
+			],
+			[
+				"strin",
+				"stringDataList"
+			],
+			[
+				"ISBN",
+				"ISBNList"
+			],
+			[
+				"I",
+				"ISBNList"
+			],
+			[
+				"isb",
+				"ISBN"
+			],
+			[
+				"autho",
+				"authorKey"
+			],
+			[
+				"Re",
+				"Remote_cache"
+			],
+			[
+				"compe",
+				"complexEntry"
+			],
+			[
+				"ge",
+				"getISBN"
+			],
+			[
+				"loca",
+				"local_cache"
+			],
+			[
+				"remte",
+				"remote"
+			],
+			[
+				"getFrom",
+				"getFromRemoteCache"
+			],
+			[
+				"Remote",
+				"Remote_cache"
+			],
+			[
+				"getLo",
+				"getLocalSerial"
+			],
+			[
+				"local",
+				"local_cache"
+			],
+			[
+				"loc",
+				"local_cache"
+			],
+			[
+				"delete",
+				"deleted"
+			],
+			[
+				"del",
+				"delete"
+			],
+			[
+				"find",
+				"findISBN"
+			],
+			[
+				"bo",
+				"books"
+			],
+			[
+				"databa",
+				"database"
+			],
+			[
+				"wh",
+				"where"
+			],
+			[
+				"p",
+				"price"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"word",
+				"wordlist"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"sel",
+				"select"
+			],
+			[
+				"donut",
+				"donuts"
+			],
+			[
+				"isbn",
+				"isbn"
+			],
+			[
+				"i",
+				"isbn"
+			],
+			[
+				"sub",
+				"subjects"
+			],
+			[
+				"no",
+				"no_lectures"
+			],
+			[
+				"lisa",
+				"lisa"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 2380,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/dropbox_config.yml",
+			"settings":
+			{
+				"buffer_size": 236,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/users_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1683,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/articles_controller.rb",
+			"settings":
+			{
+				"buffer_size": 699,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/articles/_article.html.erb",
+			"settings":
+			{
+				"buffer_size": 249,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/users/add_article.html.erb",
+			"settings":
+			{
+				"buffer_size": 697,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/shared/_article_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 367,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/models/image.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141127194400_create_images.rb",
+		"/Users/david_kav/.Trash/_image_form.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/shared/_image_form.html.erb",
+		"/Users/david_kav/Desktop/image.rb",
+		"/Users/david_kav/Desktop/College/App_Crypto/prac9.txt",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/_article.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/articles/show.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/application.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/articles/_article.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/controllers/application_controller.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/articles/new.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/users/show.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/helpers/sessions_helper.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/helpers/users_helper.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/config/secrets.yml",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/config/database.yml",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/models/user.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/shared/_article_form.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/users/new_admin.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/controllers/static_pages_controller.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/shared/_error_messages.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/Gemfile",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/articles/_articles.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/controllers/sessions_controller.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/_header.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141125161325_create_articles.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/assets/stylesheets/static_pages.css.scss",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/assets/stylesheets/users.css.scss",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/assets/stylesheets/sessions.css.scss",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/_footer.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/users/new.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/sessions/new.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/static_pages/help.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141125114408_add_administrator_boolean.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/controllers/users_controller.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/models/admin.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141125102953_add_password_digest_to_admins.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141125102218_add_index_to_admins_email.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/helpers/static_pages_helper.rb",
+		"/Users/david_kav/Desktop/College/Net_mgmt/cpuScript.sh",
+		"/Users/david_kav/Desktop/College/Net_mgmt/testLoadBalancer.sh",
+		"/Users/david_kav/Desktop/College/ComponentDev/cacheAssignment/commands/update_book_command.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/cacheAssignment/commands/add_book_command.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/cacheAssignment/book_in_stock.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/cacheAssignment/database.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/data-access-comments.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/cacheAssignment/data_access.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/cacheAssignment/commands/user_command.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/cacheAssignment/driver.rb",
+		"/Users/david_kav/Desktop/College/Net_mgmt/assignment1/check_webserver.py",
+		"/Users/david_kav/Desktop/College/Net_mgmt/assignment1/run_newwebserver.py",
+		"/Users/david_kav/Desktop/College/Net_mgmt/assignment1/monitor_webserver.py",
+		"/Users/david_kav/.bash_profile",
+		"/Users/david_kav/bash_profile",
+		"/Users/david_kav/Desktop/College/Net_mgmt/Practical9-JavaCryptoAPI/RSAPrivateKeyFile",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/controllers/microposts_controller.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/assets/stylesheets/custom.css.scss",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/static_pages/home.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/shared/_feed_item.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/shared/_feed.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/controllers/static_pages_controller.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/models/user.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/helpers/sessions_helper.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/shared/_user_info.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/controllers/users_controller.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/models/micropost.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/users/show.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/microposts/_micropost.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/shared/_micropost_form.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/users/new.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/shared/_error_messages.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/config/routes.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/helpers/users_helper.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/db/migrate/20141112104215_create_microposts.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/helpers/users_helpers.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/myTwitter.sublime-project",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/myTwitter.sublime-workspace",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/spec/models/user_spec.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/assets/javascripts/application.js",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141112091836_add_remember_token_to_users.rb",
+		"/Users/david_kav/Desktop/College/programming-files/HashCollectionChallenge/readme.txt",
+		"/Users/david_kav/Desktop/College/programming-files/HashCollectionChallenge/input.txt",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/spec/requests/user_pages_spec.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/config/environments/production.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/spec/factories.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/config/environments/test.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/spec/spec_helper.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/spec/requests/static_pages_spec.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141107144812_create_users.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141110180842_add_index_to_users_email.rb",
+		"/Users/david_kav/Desktop/College/Net_mgmt/cpu100",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/spec/support/utilities.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/assets/stylesheets/custom.css.scss",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/config/application.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/static_pages/about.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/static_pages/contact.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/static_pages/home.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/_shim.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/helpers/application_helper.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/.gitignore",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/Gemfile",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/Gemfile.lock",
+		"/Users/david_kav/Desktop/College/ComponentDev/assignment2_app/.gitignore",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/layouts/_header.html.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/db/migrate/20141105101312_add_remember_token_to_users.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/layouts/application.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/controllers/sesssions_controller.rb",
+		"/Users/david_kav/Desktop/College/Net_mgmt/assignment1/monitor_webserver.pyc",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/controllers/sessions_controller.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/controllers/session_controller.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/controllers/session_controllers.rb",
+		"/Users/david_kav/Desktop/import java.util.ArrayList.java",
+		"/Users/david_kav/Desktop/College/ComponentDev/cacheassignment/commands/print_cache_command.rb",
+		"/Users/david_kav/.boto",
+		"/Users/david_kav/.pythonrc",
+		"/Users/david_kav/Desktop/College/ComponentDev/cachedemo/book_in_stock_demo.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/cachedemo/memcached.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/cacheAssignment/cacheAssignment.sublime-project",
+		"/Users/david_kav/Desktop/start/data_access2.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/cacheAssignment/commands/number_of_copies_command.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/cacheAssignment/commands/quit_command.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/static_pages/help.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/static_pages/about.html.erb",
+		"/Users/david_kav/Desktop/DavidKavanagh-PublicKey.txt",
+		"/Users/david_kav/Desktop/test.py",
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/layouts/foobar",
+		"/Users/david_kav/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getLocalSerial",
+			"setLocalCache",
+			"updateComplexData",
+			"getRemoteComplexKey",
+			"localCacheAuthorSearch",
+			"updateComplexData",
+			"setComplexDataRe",
+			"setComplexDataLo",
+			"setComplexData"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 2380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config/dropbox_config.yml",
+					"settings":
+					{
+						"buffer_size": 236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controllers/users_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1087,
+								1087
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 331.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/articles_controller.rb",
+					"settings":
+					{
+						"buffer_size": 699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								699,
+								699
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/articles/_article.html.erb",
+					"settings":
+					{
+						"buffer_size": 249,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/users/add_article.html.erb",
+					"settings":
+					{
+						"buffer_size": 697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								227,
+								227
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/shared/_article_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 367,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								231,
+								231
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 208.0,
+	"status_bar_visible": false
+}

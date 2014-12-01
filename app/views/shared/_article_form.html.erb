@@ -5,7 +5,7 @@
 	<%= f.text_field :title, placeholder: "Title" %>
 
 	<%= f.label :content %>
-    <%= f.text_area :content, placeholder: "Create a new Article..." %>
+    <%= f.text_area :content, size: "60x30", placeholder: "Create a new Article..."%>
   </div>
   <%= f.submit "Post", class: "btn btn-primary" %>
 <% end %>

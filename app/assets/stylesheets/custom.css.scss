@@ -4,6 +4,8 @@
 
 $grayMediumLight: #eaeaea;
 
+$deepBlue: #3300FF;
+
 @mixin box_sizing {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -35,6 +37,12 @@ textarea {
   }
 }
 
+.wordwrap { 
+   word-wrap: break-word;
+   }
+
+
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,7 +62,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $grayLight;
+  color: $deepBlue;
 }
 
 p {
@@ -66,6 +74,7 @@ p {
 /* header */
 
 #logo {
+  text-shadow: 2px 2px $deepBlue;
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
@@ -79,6 +88,27 @@ p {
     color: white;
     text-decoration: none;
   }
+}
+
+.block { 
+   position: relative;
+   padding-left: 1.5cm;
+   padding-right: 1.5cm;
+   }
+
+#navBar {
+  text-shadow: 2px 2px $deepBlue;
+  color: white;
+}
+
+.navBar{
+  text-shadow: 2px 2px $deepBlue;
+  color: white;
+}
+
+.header {
+  background-image: asset-url("banner.jpeg");
+  
 }
 
 /* footer */
@@ -157,7 +187,7 @@ aside {
   display: block;
 }
 .timestamp {
-  color: $grayLight;
+  color: $deepBlue;
 }
 .gravatar {
   float: left;

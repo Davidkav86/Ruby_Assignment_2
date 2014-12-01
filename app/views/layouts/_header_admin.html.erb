@@ -1,16 +1,17 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
+    <div class="header">
     <div class="container">
       <%= link_to "Sports-Shack", root_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Test Kid", help_path %></li>
-          <li><%= link_to "Please", help_path %></li>
+          <li><%= link_to "Home", current_user, id: "navBar"  %></li>
+          <li><%= link_to "Article Management", add_article_path, id: "navBar" %></li>
+          <li><%= link_to "Create admin account", new_admin_path, id: "navBar"  %></li>
           <% if signed_in? %>
-            <li><%= link_to "Users", '#' %></li>
+            <li><%= link_to "Users", '#', id: "navBar"  %></li>
             <li id="fat-menu" class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown", id="navBar">
                 Account <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
@@ -28,5 +29,6 @@
         </ul>
       </nav>
     </div>
+  </div>
   </div>
 </header>

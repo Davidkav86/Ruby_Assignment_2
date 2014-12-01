@@ -7,13 +7,10 @@
 </p>
 <p>
   Manage Articles
-  <div class="row">
+  <div class="container">
     <aside class="span4">
       <section>
         <%= render 'shared/article_form' %>
-      </section>
-      <section>
-        <%= render 'shared/image_form'%>
       </section>
     </aside>
   </div>
@@ -26,9 +23,9 @@
       <h2>Article List - Total:<%= @user.articles.count %></h2>
     </div>
     <div class="container">
-      <ol class="articles">
+      <ul class="articles">
         <%= render @articles %>
-      </ol>
+      </ul>
       </div>
       <%= will_paginate @articles %>
     <% end %>

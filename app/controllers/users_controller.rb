@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
 
   def show
-    # initialise @users so it can be used in the html to create a list
     @users = User.all
     @user = User.find(params[:id])
     @articles = @user.articles.paginate(page: params[:page])
@@ -46,18 +45,11 @@ class UsersController < ApplicationController
     @user = current_user
     @article = current_user.articles.build if signed_in?
     @articles = @user.articles.paginate(page: params[:page])
-    @image = Image.new(params[:image])
-    respond_to do |format|      
-      if @image.save         
-        format.html { redirect_to @image, notice: 'Image was successfully created.' } 
-      else      
-        format.html { render action: "new" }  
-      end    
-    end
   end
 
   def new_admin
-    @user = User.new
+    @user = current_user
+    @new_user = User.new 
   end
 
   def create_admin
