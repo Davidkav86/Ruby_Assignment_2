@@ -1,17 +1,17 @@
 <div id="search_results">
-<h3>
-	Search results:
-</h3>
-<% if @article %>
-<ul>
-    <% @articles.each do |article| %>
-  <li><%= link_to article.title, article %></li>
-  <% end %>
-  </ul>
-  <%else%>
-  <p>Sorry. No articles are available for that given genre. Please try again</p>
-  <li>
-	<%= link_to "Return to home page", root_url %>
-  </li>
-  <%end%>
- </div>
+	<h3>
+		Search results:
+	</h3>
+	<% if @articles %>
+	<ul>
+		<% @articles.each do |article| %>
+		<li><%= link_to article.title, article %></li>
+		<% end %>
+	</ul>
+	<%else%>
+	<p>Sorry. No articles are available for that genre. Please try another.</p>
+	<li>
+		<%= link_to "Return to home page", root_url %>
+	</li>
+	<%end%>
+</div>
