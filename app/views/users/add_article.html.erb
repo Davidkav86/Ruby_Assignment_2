@@ -1,9 +1,6 @@
 <% provide(:title, "Admnistrator") %>
-
-<h1>Article Management Page</h1>
- <ul class="nav container pull-right">
-  <li><%= link_to "Admin Home Page", current_user %></li>
-  </ul>
+<div id="home">
+<h3>Article Management Page</h3>
 </p>
 <p>
   Manage Articles
@@ -30,3 +27,4 @@
       <%= will_paginate @articles %>
     <% end %>
   </div>
+</div>

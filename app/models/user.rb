@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
   before_create :create_remember_token # arranges for Rails to look for a method called create_remember_token and run it before saving the user
 
   has_many :articles, dependent: :destroy
+  has_many :comments, dependent: :destroy
 
 
   def User.new_remember_token

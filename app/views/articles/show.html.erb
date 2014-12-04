@@ -3,8 +3,23 @@
 <p>
    <%= render 'layouts/article' %>
 </p>
+<div class="span8">
+    <div class="container pull-left">
+      <section>
+        <%= render 'shared/comment_form' %>
+      </section>
+    </div>
+    <% if @article.comments.any? %>
+      <ol class="container">
+        <%= render @comments %>
+      </ol>
+      <%= will_paginate @comments %>
+    <% end %>
+  </div>
 <p>
+  <div class="container">
   <ul class="nav pull-left">
 	<li><%= link_to "Admin Home Page", current_user %></li>
   </ul>
+</div>
 </p>

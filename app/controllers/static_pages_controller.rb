@@ -5,6 +5,10 @@ class StaticPagesController < ApplicationController
   	@articles = Article.all
   end
 
+  def search
+      @articles = Article.search params[:search]
+  end
+
   def help
   end
 

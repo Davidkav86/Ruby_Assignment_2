@@ -1,0 +1,8 @@
+<div class="container pull-left" id="comment">
+  <span class="content container"><%= comment.content %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(comment.created_at) %> ago. By <%= User.find_by(id: comment.user_id).name%>.
+  </span>
+</div>
+<div class="container" style="height: 2.5cm">
+</div>
