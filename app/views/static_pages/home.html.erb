@@ -2,101 +2,152 @@
 <!DOCTYPE html>
 <html lang="en">
     <body>
+      <div class="container"id="home">
+        <div class="centered">
     <div class="container">
       <div class=" pull-left">
-        <h1>
+        <h1 class="underline">
           Headlines
         </h1>
       </div>
+      <div class="pull-right">
+        <%= render 'shared/genre_search'%>
+      </div>
     </div>
     <div class="container">
-    <div class=" pull-left">
+    <div class=" pull-left" id="article_content" align="center">
       <div class="center">
         <img class="center", src="https://s3.amazonaws.com/jetstrap-site/images/website/index/what_icon.png">
       </div>
 
-      <h4 style="float:left;display: inline; width: 265px; word-break: break-all; word-wrap: break-word;">
+      <h4 style="float:left;display: inline; width: 265px; word-wrap: break-word;">
+        <% unless @articles[0].blank?%>
         <%= @articles[0].title %>
+        <%end%>
       </h4>
-      <textarea rows="12" cols="40" class="form-control">
-      	<%= @articles[0].content.at(0..380) + "..."%>
+      <p>
+      Genre: <%= @articles[0].genre%>
+      </p>
+      <textarea rows="12" cols="30" class="form-control">
+        <% unless @articles[0].blank?%>
+        <%= @articles[0].content.at(0..380) + "..."%>
+        <%end%>
       </textarea>
        <p class="center">
+        <% unless @articles[0].blank?%>
          Posted <%= time_ago_in_words(@articles[0].created_at) %> ago.
+         <%end%>
       </p>
       <li class="center">
-		<%= link_to "Read Full Article Here",  @articles[0]%>
-	  </li>
+        <% unless @articles[0].blank?%>
+    <%= link_to "Read Full Article Here",  @articles[0]%>
+    <%end%>
+    </li>
     </div>
-    <div class="block pull-left" align="center">
+    <div class="block pull-left" id="article_content" align="center">
       <div class="center">
         <img class="center", src="https://s3.amazonaws.com/jetstrap-site/images/website/index/what_icon.png">
       </div>
-      <h4 style="float:left;display: inline; width: 265px; word-break: break-all; word-wrap: break-word;">
+      <h4 style="float:left;display: inline; width: 265px; word-wrap: break-word;">
+        <% unless @articles[1].blank?%>
         <%= @articles[1].title %>
+        <%end%>
       </h4>
-      <textarea rows="12" cols="40" class="form-control">
-      	<%= @articles[1].content.at(0..380) + "..."%>
+      <p>
+      Genre: <%= @articles[1].genre%>
+      </p>
+      <textarea rows="12" cols="30" class="form-control">
+        <% unless @articles[1].blank?%>
+        <%= @articles[1].content.at(0..380) + "..."%>
+        <%end%>
       </textarea>
       <p class="center">
+        <% unless @articles[1].blank?%>
          Posted <%= time_ago_in_words(@articles[1].created_at) %> ago.
+         <%end%>
       </p>
       <li class="center">
-		<%= link_to "Read Full Article Here",  @articles[1]%>
-	  </li>
+        <% unless @articles[1].blank?%>
+    <%= link_to "Read Full Article Here",  @articles[1]%>
+    <%end%>
+    </li>
     </div>
-    <div class="pull-left">
+    <div class="pull-left" id="article_content" align="center">
       <div class="center">
         <img class="center", src="https://s3.amazonaws.com/jetstrap-site/images/website/index/what_icon.png">
       </div>
-      <h4 style="float:left;display: inline; width: 265px; word-break: break-all; word-wrap: break-word;">
+      <h4 style="float:left;display: inline; width: 265px; word-wrap: break-word;">
+        <% unless @articles[2].blank?%>
         <%= @articles[2].title %>
+        <%end%>
       </h4>
-      <textarea rows="12" cols="40" class="form-control">
-      	<%= @articles[2].content.at(0..380) + "..."%>
+      <p>
+      Genre: <%= @articles[2].genre%>
+      </p>
+      <textarea rows="12" cols="30" class="form-control">
+        <% unless @articles[2].blank?%>
+        <%= @articles[2].content.at(0..380) + "..."%>
+        <%end%>
       </textarea>
       <p class="center">
+        <% unless @articles[2].blank?%>
          Posted <%= time_ago_in_words(@articles[2].created_at) %> ago.
+         <%end%>
       </p>     
       <li class="center">
-		<%= link_to "Read Full Article Here",  @articles[2]%>
-	  </li>
+        <% unless @articles[2].blank?%>
+    <%= link_to "Read Full Article Here",  @articles[2]%>
+    <%end%>
+    </li>
     </div>
 </div>
     <div class="container">
-      <h3>
+      <h3 class="underline">
         Latest News
       </h3>
     </div>
     <div class="container">
-    	<ul class="list-group">
+      <ul class="list-group">
          <span class="content">
-  	     <li><%= link_to @articles[3].title, @articles[3] %></li>
+         <% unless @articles[3].blank?%>
+         <li><%= link_to @articles[3].title, @articles[3] %></li>
+         <%end%>
           </span>
          <span class="timestamp">
+          <% unless @articles[3].blank?%>
               Posted <%= time_ago_in_words(@articles[3].created_at) %> ago.
+              <%end%>
            </span>
         </li>
        </ul>
        <ul class="list-group">
          <span class="content">
-  	     <li><%= link_to @articles[4].title, @articles[4] %></li>
+          <% unless @articles[4].blank?%>
+         <li><%= link_to @articles[4].title, @articles[4] %></li>
+         <%end%>
           </span>
          <span class="timestamp">
+          <% unless @articles[4].blank?%>
               Posted <%= time_ago_in_words(@articles[4].created_at) %> ago.
+              <%end%>
            </span>
         </li>
        </ul>
        <ul class="list-group">
          <span class="content">
-  	     <li><%= link_to @articles[5].title, @articles[5] %></li>
+         <% unless @articles[5].blank?%>
+         <li><%= link_to @articles[5].title, @articles[5] %></li>
+         <%end%>
           </span>
          <span class="timestamp">
+          <% unless @articles[5].blank?%>
               Posted <%= time_ago_in_words(@articles[5].created_at) %> ago.
+              <%end%>
            </span>
         </li>
        </ul>
     </div>
   <%= link_to "Sign up now!", signup_path, class: "btn btn-primary" %>
 </div>
-
+</div>
+</div>

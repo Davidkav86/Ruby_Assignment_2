@@ -1,5 +1,7 @@
 module SessionsHelper
 
+  $id
+  
   def sign_in(user)
     remember_token = User.new_remember_token # create a new token
     # .permanent - set the expiration to 20.years.from_now
@@ -25,10 +27,17 @@ module SessionsHelper
 
   def sign_out
     # change the users remember_token in case the cookie has been stolen, as it could still be used to authorize a user
-    current_user.update_attribute(:remember_token,
-                                  User.digest(User.new_remember_token))
+    current_user.update_attribute(:remember_token,User.digest(User.new_remember_token))
     cookies.delete(:remember_token)
     self.current_user = nil
+  end
+
+  def store_article_id(current_id)
+    $id = current_id
+  end
+
+  def get_article_id
+    $id
   end
 
   def signed_in_user

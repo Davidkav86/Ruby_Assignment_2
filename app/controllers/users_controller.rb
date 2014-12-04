@@ -25,7 +25,7 @@ class UsersController < ApplicationController
         @user.update_attributes(is_admin: false)
         @user.save
         sign_in @user # calls the sign_in method in the sessions_helper. Signs a user in once they have signed up
-        flash[:success] = "Welcome to the Sample App!"
+        flash[:success] = "Welcome to SPORTS-SHACK"
         redirect_to @user
       else
         render 'new'

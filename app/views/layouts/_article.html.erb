@@ -1,4 +1,5 @@
-<body>
+<body id="article">
+  <div class="container title">
   <div class="container">
     <img src="https://s3.amazonaws.com/jetstrap-site/images/website/index/what_icon.png"
     class="pull-right">
@@ -7,11 +8,14 @@
        <%= @article.title %>
       </h1>
     </div>
-    <span class="timestamp pull-right">
-    Posted at: <%= @article.created_at %>.
+    <span class=" pull-right">
+    Genre: <%= @article.genre %>
     </span>
-    <div class="container pull-right">
+    <div class="container pull-left">
       Posted by: <%= @user.name%>
+      <div class="timestamp">
+      Posted at: <%= @article.created_at %>.
+    </div>
     </div>
     <div class="form-group">
     </div>
@@ -19,6 +23,7 @@
       <%= @article.content %>
     </textarea>
   </div>
+</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
   >
   </script>

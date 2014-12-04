@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  # get 'users/new'
-
+ 
   resources :users # We can get the REST-style URL to work with the user controller by adding a single line to our routes file 
   resources :sessions, only: [:new, :create, :destroy] # apples RESTful resources to sessions controller
   resources :articles
+  resources :comments, :static_pages
 
   root  'static_pages#home'
+  match '/', to: 'static_pages#search', via: 'post'
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
   match '/contact', to: 'static_pages#contact', via: 'get'
   match '/add_article', to: 'users#add_article', via: 'get'
   match '/new_admin', to: 'users#new_admin', via: 'get'
+ 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

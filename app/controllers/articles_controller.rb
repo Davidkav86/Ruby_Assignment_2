@@ -11,10 +11,15 @@ class ArticlesController < ApplicationController
 
 	def show
 		@article = Article.find(params[:id])
-		@user = User.find_by(id: @article.user_id) 
+		store_article_id @article.id
+		@user = User.find_by(id: @article.user_id)
+		@comments = @article.comments.paginate(page: params[:page])
+		@comment = current_user.comments.build if signed_in? 
 	end
 
 	def create
+		@user = current_user
+		@users = User.all
 		@article = current_user.articles.build(article_params)
 		if @article.save
 			flash[:success] = "Article Published!"
@@ -31,6 +36,6 @@ class ArticlesController < ApplicationController
 	private
 
 	def article_params
-		params.require(:article).permit(:title, :content)
+		params.require(:article).permit(:title, :content, :genre)
 	end
 end
