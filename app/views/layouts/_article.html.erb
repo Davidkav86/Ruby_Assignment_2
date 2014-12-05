@@ -23,11 +23,11 @@
       <%= @article.content %>
     </textarea>
   </div>
+  <% if current_user.id == @article.user_id %>
+    <%= link_to "Remove Article", @article, method: :delete,
+                                     data: { confirm: "Are you sure you want to delete this article?" },
+                                     title: @article.title %>
+  <% end %>
 </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
-  >
-  </script>
-  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
-  >
-  </script>
+
 </body>
