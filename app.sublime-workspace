@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"fin",
+				"find_by"
+			],
+			[
+				"co",
+				"comment"
+			],
+			[
+				"article",
+				"article_id"
+			],
+			[
 				"user",
 				"user_name"
 			],
@@ -86,10 +98,6 @@
 			[
 				"monitor",
 				"monitor_instance"
-			],
-			[
-				"co",
-				"connect_to_region"
 			],
 			[
 				"top",
@@ -395,23 +403,7 @@
 			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 2380,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/dropbox_config.yml",
-			"settings":
-			{
-				"buffer_size": 236,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/users_controller.rb",
-			"settings":
-			{
-				"buffer_size": 1683,
+				"buffer_size": 2452,
 				"line_ending": "Unix"
 			}
 		},
@@ -419,31 +411,103 @@
 			"file": "app/controllers/articles_controller.rb",
 			"settings":
 			{
-				"buffer_size": 699,
+				"buffer_size": 879,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/articles/_article.html.erb",
+			"file": "app/controllers/static_pages_controller.rb",
 			"settings":
 			{
-				"buffer_size": 249,
+				"buffer_size": 309,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/users/add_article.html.erb",
+			"file": "app/controllers/comments_controller.rb",
 			"settings":
 			{
-				"buffer_size": 697,
+				"buffer_size": 826,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/shared/_article_form.html.erb",
+			"file": "app/views/comments/_comment.html.erb",
 			"settings":
 			{
-				"buffer_size": 367,
+				"buffer_size": 620,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/article.rb",
+			"settings":
+			{
+				"buffer_size": 394,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/static_pages/search.html.erb",
+			"settings":
+			{
+				"buffer_size": 351,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/articles/_user_search.html.erb",
+			"settings":
+			{
+				"buffer_size": 241,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/static_pages/home.html.erb",
+			"settings":
+			{
+				"buffer_size": 4802,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/users/show_admin.html.erb",
+			"settings":
+			{
+				"buffer_size": 679,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/custom.css.scss",
+			"settings":
+			{
+				"buffer_size": 4197,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/sessions/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 1055,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/migrate/20141202112101_create_comments.rb",
+			"settings":
+			{
+				"buffer_size": 256,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/migrate/20141202115618_change_article_column.rb",
+			"settings":
+			{
+				"buffer_size": 128,
 				"line_ending": "Unix"
 			}
 		}
@@ -472,42 +536,68 @@
 	},
 	"file_history":
 	[
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141205095133_add_index_to_comments.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/static_pages/untitled",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/_article.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/articles/show.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/users/add_article.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/users/new_admin.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/schema.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/assignment2_app/db/schema.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/users/new.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/shared/_search.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/shared/_comment_form.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/application.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/controllers/comments_controller.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/assets/stylesheets/custom.css.scss",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/Gemfile",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/models/user.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/models/comment.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/controllers/static_pages_controller.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/controllers/users_controller.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/shared/_article_form.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/_header_admin.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/assignment2_app/app/views/comments/_comment.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/assignment2_app/app/views/shared/_comment_form.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141202173633_add_genre_column_to_article.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/shared/_error_messages.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/helpers/sessions_helper.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/helpers/articles_helper.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/controllers/application_controller.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/static_pages/home.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/helpers/application_helper.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141202115618_change_article_column.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/users/show_admin.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141202112101_create_comments.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141201202514_change_string_to_text.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/config/dropbox_config.yml",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/users/homepage.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/_header.html.erb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/articles/_article.html.erb",
+		"/Users/david_kav/Desktop/College/Net_mgmt/assignment2/monitor_webserver.py",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/config/application.rb",
+		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/config/locales/en.yml",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/models/image.rb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141127194400_create_images.rb",
 		"/Users/david_kav/.Trash/_image_form.html.erb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/shared/_image_form.html.erb",
 		"/Users/david_kav/Desktop/image.rb",
 		"/Users/david_kav/Desktop/College/App_Crypto/prac9.txt",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/_article.html.erb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/articles/show.html.erb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/application.html.erb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/articles/_article.html.erb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/controllers/application_controller.rb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/articles/new.html.erb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/users/show.html.erb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/helpers/sessions_helper.rb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/helpers/users_helper.rb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/config/secrets.yml",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/config/database.yml",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/models/user.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/shared/_article_form.html.erb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/users/new_admin.html.erb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/controllers/static_pages_controller.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/shared/_error_messages.html.erb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/Gemfile",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/articles/_articles.html.erb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/controllers/sessions_controller.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/_header.html.erb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141125161325_create_articles.rb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/assets/stylesheets/static_pages.css.scss",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/assets/stylesheets/users.css.scss",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/assets/stylesheets/sessions.css.scss",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/_footer.html.erb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/users/new.html.erb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/sessions/new.html.erb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/static_pages/help.html.erb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141125114408_add_administrator_boolean.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/controllers/users_controller.rb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/models/admin.rb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141125102953_add_password_digest_to_admins.rb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141125102218_add_index_to_admins_email.rb",
@@ -565,41 +655,15 @@
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/db/migrate/20141110180842_add_index_to_users_email.rb",
 		"/Users/david_kav/Desktop/College/Net_mgmt/cpu100",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/spec/support/utilities.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/assets/stylesheets/custom.css.scss",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/config/application.rb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/static_pages/about.html.erb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/static_pages/contact.html.erb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/static_pages/home.html.erb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/views/layouts/_shim.html.erb",
-		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/app/helpers/application_helper.rb",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/.gitignore",
 		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/Gemfile",
 		"/Users/david_kav/Desktop/College/ComponentDev/Assignment2_app/Gemfile.lock",
 		"/Users/david_kav/Desktop/College/ComponentDev/assignment2_app/.gitignore",
 		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/layouts/_header.html.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/db/migrate/20141105101312_add_remember_token_to_users.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/layouts/application.html.erb",
-		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/controllers/sesssions_controller.rb",
-		"/Users/david_kav/Desktop/College/Net_mgmt/assignment1/monitor_webserver.pyc",
-		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/controllers/sessions_controller.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/controllers/session_controller.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/controllers/session_controllers.rb",
-		"/Users/david_kav/Desktop/import java.util.ArrayList.java",
-		"/Users/david_kav/Desktop/College/ComponentDev/cacheassignment/commands/print_cache_command.rb",
-		"/Users/david_kav/.boto",
-		"/Users/david_kav/.pythonrc",
-		"/Users/david_kav/Desktop/College/ComponentDev/cachedemo/book_in_stock_demo.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/cachedemo/memcached.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/cacheAssignment/cacheAssignment.sublime-project",
-		"/Users/david_kav/Desktop/start/data_access2.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/cacheAssignment/commands/number_of_copies_command.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/cacheAssignment/commands/quit_command.rb",
-		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/static_pages/help.html.erb",
-		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/static_pages/about.html.erb",
-		"/Users/david_kav/Desktop/DavidKavanagh-PublicKey.txt",
-		"/Users/david_kav/Desktop/test.py",
-		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/app/views/layouts/foobar",
-		"/Users/david_kav/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+		"/Users/david_kav/Desktop/College/ComponentDev/mytwitter/db/migrate/20141105101312_add_remember_token_to_users.rb"
 	],
 	"find":
 	{
@@ -617,6 +681,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"1",
+			"field",
 			"getLocalSerial",
 			"setLocalCache",
 			"updateComplexData",
@@ -643,7 +709,6 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
 				{
@@ -651,15 +716,15 @@
 					"file": "config/routes.rb",
 					"settings":
 					{
-						"buffer_size": 2380,
+						"buffer_size": 2452,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								544,
+								535
 							]
 						],
 						"settings":
@@ -676,72 +741,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "config/dropbox_config.yml",
-					"settings":
-					{
-						"buffer_size": 236,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/controllers/users_controller.rb",
-					"settings":
-					{
-						"buffer_size": 1683,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1087,
-								1087
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 331.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "app/controllers/articles_controller.rb",
 					"settings":
 					{
-						"buffer_size": 699,
+						"buffer_size": 879,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								699,
-								699
+								211,
+								193
 							]
 						],
 						"settings":
@@ -756,19 +767,75 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/views/articles/_article.html.erb",
+					"buffer": 2,
+					"file": "app/controllers/static_pages_controller.rb",
 					"settings":
 					{
-						"buffer_size": 249,
+						"buffer_size": 309,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								240,
+								240
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/comments_controller.rb",
+					"settings":
+					{
+						"buffer_size": 826,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								598,
+								598
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/comments/_comment.html.erb",
+					"settings":
+					{
+						"buffer_size": 620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								482,
+								482
 							]
 						],
 						"settings":
@@ -783,18 +850,99 @@
 				},
 				{
 					"buffer": 5,
-					"file": "app/views/users/add_article.html.erb",
+					"file": "app/models/article.rb",
 					"settings":
 					{
-						"buffer_size": 697,
+						"buffer_size": 394,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								227,
-								227
+								347,
+								347
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/static_pages/search.html.erb",
+					"settings":
+					{
+						"buffer_size": 351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/articles/_user_search.html.erb",
+					"settings":
+					{
+						"buffer_size": 241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								183,
+								183
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/static_pages/home.html.erb",
+					"settings":
+					{
+						"buffer_size": 4802,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								892,
+								892
 							]
 						],
 						"settings":
@@ -810,24 +958,135 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "app/views/shared/_article_form.html.erb",
+					"buffer": 9,
+					"file": "app/views/users/show_admin.html.erb",
 					"settings":
 					{
-						"buffer_size": 367,
+						"buffer_size": 679,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								231,
-								231
+								494,
+								494
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/assets/stylesheets/custom.css.scss",
+					"settings":
+					{
+						"buffer_size": 4197,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1063,
+								1063
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/views/sessions/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 1055,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								137,
+								137
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "db/migrate/20141202112101_create_comments.rb",
+					"settings":
+					{
+						"buffer_size": 256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "db/migrate/20141202115618_change_article_column.rb",
+					"settings":
+					{
+						"buffer_size": 128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
