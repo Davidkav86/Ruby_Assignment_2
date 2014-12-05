@@ -24,9 +24,12 @@
     </textarea>
   </div>
   <% if current_user.id == @article.user_id %>
-    <%= link_to "Remove Article", @article, method: :delete,
+  <div class="btn-group icons">
+    <button class="btn"><%= link_to "Remove Article", @article, method: :delete,
                                      data: { confirm: "Are you sure you want to delete this article?" },
-                                     title: @article.title %>
+                                     title: @article.title %></button>                            
+    <button class="btn"><%= link_to "Edit Article", edit_article_path(@article) %></button>
+    </div>                                 
   <% end %>
 </div>
 

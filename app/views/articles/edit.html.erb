@@ -1,0 +1,19 @@
+<div class="container" id="home">
+<% provide(:title, "Edit Article") %>
+<h3>Edit article</h3>
+
+<%= form_for(@article) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+	<%= f.label :title %>
+	<%= f.text_field :title%>
+
+	<%= f.label :genre %>
+	<%= f.text_field :genre%>
+
+	<%= f.label :content %>
+    <%= f.text_area :content, size: "60x30"%>
+  </div>
+  <%= f.submit "Save Changes", class: "btn btn-primary" %>
+<% end %>
+</div>

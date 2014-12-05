@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
 	before_action :signed_in_user, only: [:create, :destroy]
 
+    $id
+
 	def index
 		@article = Article.find(params[:id])
 	end
@@ -34,6 +36,22 @@ class ArticlesController < ApplicationController
 	  @article = Article.find(params[:id])
       @article.destroy
       redirect_to current_user
+	end
+
+	def edit
+		@user = current_user
+		@article = Article.find_by(id: get_article_id)
+	end
+
+	def update
+		@article = Article.find_by(id: get_article_id)
+		if @article.update_attributes(article_params)
+			flash[:success] = "Article updated"
+			redirect_to @article
+		else
+			flash[:error] = "Error Updating Article"
+			render 'edit'
+		end
 	end
 
 	private

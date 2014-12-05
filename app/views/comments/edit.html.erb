@@ -1,0 +1,11 @@
+<div class="container" id="home">
+<% provide(:title, "Edit Comment") %>	
+<h3>Edit Comment</h3>
+<%= form_for(@comment) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_area :content %>
+  </div>
+  <%= f.submit "Save changes", class: "btn btn-primary" %>
+<% end %>
+</div>
