@@ -1,9 +1,9 @@
 <% provide(:title, "Admnistrator") %>
 <div id="home">
-<h3>Article Management Page</h3>
+<h3 class="underline">Article Management Page</h3>
 </p>
 <p>
-  Manage Articles
+  Manage Articles:
   <div class="container">
     <aside class="span4">
       <section>
@@ -16,8 +16,8 @@
 
 <div class="container">
     <% if @user.articles.any? %>
-    <div class="container">
-      <h2>Article List - Total:<%= @user.articles.count %></h2>
+    <div class="container pull-left">
+      <p>Article List - Total - <%= @user.articles.count %>:</p>
     </div>
     <div class="container">
       <ul class="articles">

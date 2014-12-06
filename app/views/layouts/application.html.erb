@@ -9,11 +9,16 @@
     <%= render 'layouts/shim' %>
   </head>
   <body>
-    <% if @user != nil and @user.is_admin %>
-    <%= render 'layouts/header_admin' %>
-    <% else %>
     <%= render 'layouts/header' %>
+    <div class="container center">
+    <% if @user != nil and @user.is_admin %>
+       <div class="btn-group icons">
+    <button class="btn"><%= link_to "Article Management", add_article_path  %> </button>                               
+     <button class="btn"><%= link_to "Create New Admin Acc", new_admin_path  %> </button>
+     <button class="btn"><%= link_to "Admin Console", current_user  %> </button>
+     </div>    
     <%end%>
+  </div>
     <div class="container">
       <% flash.each do |key, value| %>
         <div class="alert alert-<%= key %>"><%= value %></div>

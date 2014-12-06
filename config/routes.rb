@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   root  'static_pages#home'
   match '/', to: 'static_pages#search', via: 'post'
+  match '/user_path', to: 'users#search', via: 'post'
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
@@ -15,6 +16,8 @@ Rails.application.routes.draw do
   match '/contact', to: 'static_pages#contact', via: 'get'
   match '/add_article', to: 'users#add_article', via: 'get'
   match '/new_admin', to: 'users#new_admin', via: 'get'
+  match '/all_articles', to: 'static_pages#all_articles', via: 'get'
+  match '/all_users', to: 'static_pages#all_users', via: 'get'
  
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,0 +1,25 @@
+<div id="search_results">
+	<h3 class="underline">
+		Search results
+	</h3>
+	<p>Users:</p>
+	<% if @users %>
+	<ol>
+		<% @users.each do |user| %>
+		<li><%= link_to user.name, :action => 'show', :id => user.id  %></li>
+	</ol>
+	<p>Users Comments:</p>
+	<ul>
+		<% user.comments.each do |comment|%>
+		<li><%= link_to comment.content, :action => 'show', :id => comment.id  %></li>
+		<% end %>
+		<% end %>
+	</ul>
+
+	<%else%>
+	<p>No users matching that name</p>
+	<li>
+		<%= link_to "Return to home page", current_user %>
+	</li>
+	<%end%>
+</div>

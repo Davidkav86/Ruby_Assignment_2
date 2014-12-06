@@ -1,0 +1,20 @@
+<% provide(:title, 'Users') %>
+
+<div class="container home" id="home">
+	<h3 class="container center">User List </h3>
+    <% if @users %>
+    <div class="container pull-left">
+    </div>
+    <div class="container">
+         <%= @users.each_with_index do |user, index| %>
+         <% break if @users.size - 1 == index %>
+        <ol class="articles">
+            <% if !user.is_admin%>
+           <li><%= link_to user.name, user %></li>
+           <%end%>
+        </ol>
+<%end%>
+      </div>   
+    <% end %>
+  </div>
+</div>

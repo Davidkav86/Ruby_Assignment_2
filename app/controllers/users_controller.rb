@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   def show
     @users = User.all
     @user = User.find(params[:id])
+    @user_search = User.search(params[:search])
     @articles = @user.articles.paginate(page: params[:page])
     is_admin = @user.is_admin
     
@@ -39,6 +40,8 @@ class UsersController < ApplicationController
 
   def show_admin
     @users = User.all
+    @user = User.find(params[:id])
+    @articles = Articles.all
   end
 
   def add_article
@@ -61,6 +64,10 @@ class UsersController < ApplicationController
     else
       render 'create_admin'
     end
+  end
+
+  def search
+    @users = User.search params[:search]
   end
 
   private

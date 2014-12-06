@@ -101,14 +101,26 @@ p {
 /* header */
 
 #logo {
-  text-shadow: 2px 2px $deepBlue;
+  text-shadow: 4px 4px $deepBlue;
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #FFFFFF;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+#navText {
+  margin-right: 10px;
+  font-size: 1.3em;
+  color: #FFFFFF;
   font-weight: bold;
   line-height: 1;
   &:hover {
@@ -125,17 +137,16 @@ p {
 
 #navBar {
   text-shadow: 2px 2px $deepBlue;
-  color: white;
+  color:rgba(192,192,192,0.4);
 }
 
 .navBar{
   text-shadow: 2px 2px $deepBlue;
-  color: white;
+  color:rgba(192,192,192,0.4);
 }
 
 .header {
-  background-image: asset-url("banner.jpeg");
-  
+  background: rgba(192,192,192,0.2); 
 }
 
 /* footer */

@@ -9,6 +9,14 @@ class StaticPagesController < ApplicationController
       @articles = Article.search params[:search]
   end
 
+  def all_articles
+    @articles = Article.all
+  end
+
+  def all_users
+    @users = User.all
+  end
+
   def help
   end
 

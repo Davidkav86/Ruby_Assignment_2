@@ -1,21 +1,15 @@
-<% provide(:title, "Admnistrator #{@user.name}") %>
-<div class="container"id="home">
-	<h3>Admin home page</h3>
-		Home page for an administrator
-		<ul class="nav pull-right">
-			<li><%= link_to "Article Management", add_article_path %></li>
-			<li><%= link_to "Create an administrator account", new_admin_path %></li>
-			<li><%= link_to "View all Users", '#' %></li>
-			<li><%= link_to "List of articles", '#' %></li>
-			<li><%= link_to "Delete/Edit comments from all users", '#' %></li>
-		</ul>
- 		<div class="span12 pull-right">
-			<ul class="users">
-				<% @users.each do |user| %>
-				<li>
-					<%= link_to user.name, user %>
-				</li>
-				<% end %>
-			</ul>
-		</div> 
+<% provide(:title, "Admin: #{@user.name}") %>
+<div class="container pull-left"id="home">
+	<h3>Administrator Console</h3>
+	<div class="pull-left">
+		<p class="underline">Search users</p>
+		<%= render 'shared/user_search'%>
+	</div>
+	<div rows="12" cols="30" class="container pull-right">
+		<p>Articles</p>
+	<ul>
+		<% @articles.each do |article| %>
+		<li><%= link_to article.title, :action => 'show', :id => article.id  %></li><% end %>
+	</ul>
+</div>
 </div>

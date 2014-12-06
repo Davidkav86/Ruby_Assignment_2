@@ -1,0 +1,26 @@
+<% provide(:title, 'Articles') %>
+
+<div class="container home" id="home">
+	<h3 class="container center">Article List </h3>
+    <% if @articles %>
+    <div class="container pull-left">
+    </div>
+    <div class="container">
+        <%= @articles.each_with_index do |article, index| %>
+        <% break if @articles.size - 1 == index %>
+        <ul class="articles">
+        	<span class="content">
+  	           <li><%= link_to article.title, article %></li>
+            </span>
+            <span class="timestamp">
+               Posted <%= time_ago_in_words(article.created_at) %> ago. By <%= User.find_by(id:article.user_id).name%>
+            </span>
+            <span class="pull-right">
+            	Genre: <%= article.genre%>
+            </span>
+        </ul>
+        <%end%>
+      </div>   
+    <% end %>
+  </div>
+</div>
