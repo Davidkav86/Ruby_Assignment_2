@@ -1,0 +1,37 @@
+ <div class="container" id="home">
+ 
+  <h3>Edit Profile</h3>
+  <% provide(:title, "Edit Profile") %>
+  <div class=" pull-left">
+  <%= form_for(@user) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+
+  <%= f.label "Favourite Sport" %>
+  <%= f.select :fav_sport, ["Football","Rugby","Tennis","Golf","Boxing","MMA","Snooker","Formula 1","Other"]%>
+
+  <%= f.label "Favourite Team/Athlete" %>
+  <%= f.text_field :fav_team_athlete %>
+
+  <%= f.label "Image tag" %>
+  <%= f.text_field :picture %>
+
+  <%= f.label :personal_message %>
+  <%= f.text_area :personal_message, size: "10x10"%>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <%= f.label :password_confirmation, "Confirmation" %>
+  <%= f.password_field :password_confirmation %>
+
+  <%= f.submit "Save Changes", class: "btn btn-primary" %>
+  <% end %>
+</div>
+</div>
+</div>

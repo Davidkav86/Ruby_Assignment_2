@@ -1,10 +1,9 @@
 <% provide(:title, @article.title) %>
-<h2>Article page</h2>
 <p>
    <%= render 'layouts/article' %>
 </p>
-<div class="span8">
-    <div class="container pull-left">
+<div class="container">
+    <div class="container center">
       <section>
         <%= render 'shared/comment_form' %>
       </section>
@@ -18,8 +17,5 @@
   </div>
 <p>
   <div class="container">
-  <ul class="nav pull-left">
-	<li><%= link_to "Admin Home Page", current_user %></li>
-  </ul>
 </div>
 </p>

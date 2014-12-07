@@ -36,6 +36,10 @@ body {
   text-shadow: 2px 2px $deepBlue;
 }
 
+.image {
+  border: 4px solid;
+}
+
 section {
   overflow: auto;
 }
@@ -55,7 +59,27 @@ textarea {
    word-wrap: break-word;
    }
 
+.profile {
+  padding: 3px;
+  border: 2px solid;
+  border-style: double;
+  background-color: #000000;
+  height:20cm;
+  color: #FFFFFF;
+  float: left;
+}
 
+#personalMessage {
+  color: #000000;
+  padding: 5px;
+  border: 2px solid;
+  border-style: double;
+  box-shadow: 10px 10px 5px #888888;
+  background-color: #FFFFFF;
+  width: 6cm;
+  Height: 3cm;
+
+}
 
 /* typography */
 

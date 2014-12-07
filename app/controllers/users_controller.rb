@@ -18,7 +18,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    if current_user.is_admin == true
+    if current_user
       create_admin
     else
       @user = User.new(user_params)
@@ -68,6 +68,21 @@ class UsersController < ApplicationController
 
   def search
     @users = User.search params[:search]
+  end
+
+  def edit
+    @user = current_user
+  end
+
+  def update
+    @user = current_user
+    if @user.update_attributes(user_params)
+      flash[:success] = "Profile updated"
+      redirect_to current_user
+    else
+      flash[:error] = "Error Updating Profile"
+      render 'edit'
+    end
   end
 
   private

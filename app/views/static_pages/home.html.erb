@@ -17,7 +17,7 @@
     <div class="container">
     <div class=" pull-left" id="article_content" align="center">
       <div class="center">
-        <img class="center", src="https://s3.amazonaws.com/jetstrap-site/images/website/index/what_icon.png">
+        <%= image_tag("#{@articles[0].picture}", :class => "image") %>
       </div>
 
       <h4 style="float:left;display: inline; width: 265px; word-wrap: break-word;">
@@ -46,7 +46,7 @@
     </div>
     <div class="block pull-left" id="article_content" align="center">
       <div class="center">
-        <img class="center", src="https://s3.amazonaws.com/jetstrap-site/images/website/index/what_icon.png">
+        <%= image_tag("#{@articles[1].picture}", :class => "image") %>
       </div>
       <h4 style="float:left;display: inline; width: 265px; word-wrap: break-word;">
         <% unless @articles[1].blank?%>
@@ -74,7 +74,7 @@
     </div>
     <div class="pull-left" id="article_content" align="center">
       <div class="center">
-        <img class="center", src="https://s3.amazonaws.com/jetstrap-site/images/website/index/what_icon.png">
+        <%= image_tag("#{@articles[2].picture}", :class => "image") %>
       </div>
       <h4 style="float:left;display: inline; width: 265px; word-wrap: break-word;">
         <% unless @articles[2].blank?%>

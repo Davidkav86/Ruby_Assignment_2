@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141202115618) do
+ActiveRecord::Schema.define(version: 20141207112940) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20141202115618) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "genre"
+    t.string   "picture"
   end
 
   add_index "articles", ["user_id", "created_at"], name: "index_articles_on_user_id_and_created_at"
@@ -33,6 +35,18 @@ ActiveRecord::Schema.define(version: 20141202115618) do
 
   add_index "comments", ["article_id", "created_at"], name: "index_comments_on_article_id_and_created_at"
 
+  create_table "messages", force: true do |t|
+    t.integer  "sender_id"
+    t.integer  "recipient_id"
+    t.boolean  "sender_deleted",    default: false
+    t.boolean  "recipient_deleted", default: false
+    t.string   "subject"
+    t.text     "body"
+    t.datetime "read_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "email"
@@ -41,6 +55,10 @@ ActiveRecord::Schema.define(version: 20141202115618) do
     t.string   "password_digest"
     t.string   "remember_token"
     t.boolean  "is_admin"
+    t.string   "picture"
+    t.text     "personal_message"
+    t.string   "fav_sport"
+    t.string   "fav_team_athlete"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

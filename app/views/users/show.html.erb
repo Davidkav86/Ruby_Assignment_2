@@ -1,11 +1,34 @@
 <% provide(:title, @user.name) %>
-<div class="row">
-  <aside class="span4">
-    <section>
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
+<div class="container" id="home">
+	<div class="center">
+		<h3 class="underline"><%= @user.name %>'s Profile</h3>
+	</div>
+	<div class="profile pull-left" >
+		<div class="container pull-left">
+			<%if @user.picture != nil%>
+			<%= image_tag("#{@user.picture}", :class => "image") %>
+			<%end %>
+		</div>
+		<h4>Details:</h4>
+		<div class="container" id="profile">
+			<ul>
+				<li>Name: <%=@user.name%></li>
+				<li>Favourite Sport: <%= @user.fav_sport%></li>
+				<li>Favourite Team/Athlete: <%= @user.fav_team_athlete%></li> 
+				<div class="container"><li>Personal Message:</li></div>
+				<div class="container span4" id="personalMessage">
+					<%= @user.personal_message%>
+				</div>	
+			</ul>
+			<% if @user == current_user%>
+			<div class="pull-left">
+			<button class="btn"><%= link_to "Edit Profile", edit_user_path(@user) %></button>
+			<div>
+			<%end%>
+		</div>
+		<div class="container">
+
+		</div>
+	</div>
+</div>
 </div>
