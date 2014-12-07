@@ -2,6 +2,11 @@
 
 <div class="container home" id="home">
 	<h3 class="container center">User List </h3>
+  <div class="pull-left">
+    <p class="underline">Search users</p>
+    <%= render 'shared/user_search'%>
+  </div>
+  <div class="container pull-left">
     <% if @users %>
     <div class="container pull-left">
     </div>
@@ -17,4 +22,5 @@
       </div>   
     <% end %>
   </div>
+</div>
 </div>

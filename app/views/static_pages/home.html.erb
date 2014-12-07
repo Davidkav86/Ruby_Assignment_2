@@ -146,8 +146,20 @@
            </span>
         </li>
        </ul>
+       <ul class="list-group">
+         <span class="content">
+         <% unless @articles[6].blank?%>
+         <li><%= link_to @articles[6].title, @articles[6] %></li>
+         <%end%>
+          </span>
+         <span class="timestamp">
+          <% unless @articles[6].blank?%>
+              Posted <%= time_ago_in_words(@articles[6].created_at) %> ago.
+              <%end%>
+           </span>
+        </li>
+       </ul>
     </div>
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-primary" %>
 </div>
 </div>
 </div>
