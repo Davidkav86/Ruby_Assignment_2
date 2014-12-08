@@ -13,7 +13,9 @@
   <%= f.text_field :email %>
 
   <%= f.label "Favourite Sport" %>
-  <%= f.select :fav_sport, ["Football","Rugby","Tennis","Golf","Boxing","MMA","Snooker","Formula 1","Other"]%>
+  <%= f.select :fav_sport, option_for_select = {"Football" => "Football","Rugby"=> "Rugby","Tennis"=> "Tennis","Golf" => "Golf",
+        "Boxing" => "Boxing","MMA" => "MMA",
+        "Snooker" => "Snooker","Formula 1" => "Formula 1","Other" => "Other"}%>
 
   <%= f.label "Favourite Team/Athlete" %>
   <%= f.text_field :fav_team_athlete %>

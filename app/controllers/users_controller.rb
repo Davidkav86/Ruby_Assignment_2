@@ -41,7 +41,7 @@ class UsersController < ApplicationController
   def show_admin
     @users = User.all
     @user = User.find(params[:id])
-    @articles = Articles.all
+    @articles = @user.articles.paginate(page: params[:page])
   end
 
   def add_article
@@ -89,6 +89,6 @@ class UsersController < ApplicationController
   # This method returns a version of the params hash with only the permitted attributes (while raising an error if the :user attribute is missing). 
   def user_params
     params.require(:user).permit(:name, :email, :password,
-     :password_confirmation,:is_admin)
+     :password_confirmation,:is_admin,:fav_sport,:fav_team_athlete,:picture,:personal_message)
   end
 end
